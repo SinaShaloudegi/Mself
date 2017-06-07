@@ -1,0 +1,47 @@
+.form{
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+}
+.img-div{
+	width: 100%;
+	height: 50%;
+	padding: 16px;
+}
+.form-div{
+	width: 100%;
+	padding: 16px;
+}
+.btn-div{
+	width: 100%;
+	padding: 16px;
+}
+img{
+	height: 50%;
+	width: 50%;
+	max-height: 300px;
+	max-width: 300px;
+	padding: 32px;
+}
+input{
+	width: 40%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: right;
+
+}
+button{
+	background-color: #00aefb;
+	color: #fff;
+	width: 45%;
+	height: 50px;
+	padding: 12px 20px;
+	border: 2px solid #eee;
+	font-size: 20px;
+}
+button:hover{
+	background-color: #00affb;
+	color: #ff407a;
+	border: 3px solid #ff407a;
+}
