@@ -1,12 +1,19 @@
+@font-face {
+    font-family: Noto;
+    src: url("../font/Noto.ttf");
+}
+
 nav {
     position: fixed;
     width: 100%;
     z-index: 1;
     top: 0;
+
 }
 
 body {
     margin: 0;
+    font-family: 'Lato', Noto;
 }
 
 img:hover {
@@ -27,7 +34,7 @@ a {
 }
 
 header {
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("../img/header-bg2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -40,31 +47,33 @@ header {
     text-align: center;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 18%;
     transform: translate(-50%, -50%);
     color: white;
     position: fixed;
 }
 
+
+
 .header-text h1 {
-    font-size: 65px
+    font-size: 65px;
+    animation: type 4s steps(60, end);
 }
 
 .header-text button {
-    outline: 0;
-    display: inline-block;
-    margin-top: 232px;
-    padding: 32px 40px 32px 28px;
-    color: black;
-    background-color: transparent;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-    font-size: 30px;
+    margin-top: 16px;
+    width: 15%;
+    padding: 8px 100px 8px 20px;
+    color: white;
+    background-color:rgba(0,174,251,0.4);
+    border-radius: 5%;
+    border: 2px solid #fff;
+    font-size: 25px;
 }
 
 .header-text button:hover {
-    background-color: #555;
+
+    background-color: #00aefb;
     color: white;
 }
 
@@ -72,23 +81,22 @@ h2 {
     color: #00aefb;
     font-size: 60px;
     font-style: bold;
-    padding-top: 60px;
-    padding-bottom: 32px;
+    padding-top: 0px;
     text-align: center;
 }
 
 footer {
     padding: 16px;
-    background-color: #9B9297;
+    background-color:#fff;
 }
 
 section {
-    padding-top: 32px;
-    padding-bottom: 60px;
+    padding-top: 8px;
+    padding-bottom: 32px;
 }
 
 .p-about {
-    padding: 32px;
+    padding:16px 32px;
 }
 
 p {
@@ -96,36 +104,45 @@ p {
     padding-left: 32px;
     padding-right: 32px;
 }
-
-input {
+.contact-form input {
     width: 90%;
     padding: 16px;
     text-align: right;
     margin: 8px;
+    font-style: bold;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
 }
 
-textarea {
+.contact-formm textarea {
     margin: 24px;
     width: 45%;
     padding: 16px;
     text-align: right;
     resize: none;
-    height: 150px;
+    height: 200px;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
 }
 
+.contact-form input:hover,.contact-formm textarea:hover{
+    background-color: #00affb;
+}
 .btn-sub {
     width: 20%;
     padding: 16px;
     font-size: 20px;
-    background-color: #00aefb;
+    background-color:rgba(0,174,251,0.4);
     color: #fff;
     border: 2px solid #fff;
 }
 
 .btn-sub:hover {
     background-color: #00affb;
-    color: #ff407a;
-    border: 3px solid #ff407a;
 }
 
 #contact {
@@ -144,10 +161,7 @@ textarea {
     display: table;
 }
 
-.quarter {
-    float: left;
-    width: 33%;
-}
+
 .container{
     position: relative;
     float: left;
@@ -155,57 +169,82 @@ textarea {
 
 }
 .middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
 }
 
-.container:hover .about-img {
-  opacity: 0.3;
+.container:hover img {
+    opacity: 0.3;
 }
 
 .container:hover .middle {
-  opacity: 1;
+    opacity: 1;
 }
 .order {
-  background-color: #00aefb;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-#team,
-#contact {
-    background-color: #ececec;
+    background-color: #00aefb;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 
+
+#about, #work {
+    background-color: #f6f5f2;
+}
+#team{
+    background-image: url("../img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+
+#contact{
+    background-color: #1E252B;
+
+    background-image: url("../img/map-image.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
 
 .work-img {
     border-radius: 25%;
-    width: 22%;
-    padding: 50px;
+    width: 50%;
+    margin: 16px 16px 32px;
+
+    opacity: 1;
+    display: block;
+
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .about-img {
-    border-radius: 50%;
     width: 50%;
     margin: 16px;
 
-     opacity: 1;
-  display: block;
+    opacity: 1;
+    display: block;
 
-  transition: .5s ease;
-  backface-visibility: hidden;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .team-img {
     border-radius: 50%;
     width: 50%;
-    margin: 16px;
+    margin:0px 16px;
     border: 7px solid white;
 }
 
@@ -213,7 +252,7 @@ textarea {
     width: 100%;
     overflow: hidden;
     display: inline-block;
-    padding: 16px 16px 0px 16px;
+    padding: 4px 16px;
     float: right;
     border: none;
     outline: none;
@@ -225,7 +264,8 @@ textarea {
 }
 
 .bar-item {
-    padding: 16px;
+    padding: 12px 16px;
+    font-size: 20px;
     float: right;
     width: auto;
     border: none;
@@ -234,96 +274,41 @@ textarea {
     text-align: center;
     white-space: normal;
     color: #fff;
+    background-color:transparent;
+
 }
 
 .bar-item-img {
-    padding: 0px;
+
+    margin-left: 25%;
+    padding: 8px;
     float: right;
     width: auto;
     border: none;
     outline: none;
     display: block;
+    max-height:150px;
+    max-width: 150px;
+
 }
 
 .bar-item:hover {
     color: #00aefb;
 }
 
+
 .fa-android {
     background: #a4c639;
     color: white;
 }
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-}
 
 * {
     box-sizing: border-box
 }
 
 
-/*
-.skill-container {
-    width: 100%;
-    background-color: #ddd;
-}
-
-.skills {
-    text-align: right;
-    padding-right: 20px;
-    line-height: 40px;
-    color: white;
-}
-
-.Android {
-    width: 90%;
-    background-color: #4CAF50;
-}
-
-.IOS {
-    width: 60%;
-    background-color: #2196F3;
-}
-
-.Web {
-    width: 60%;
-    background-color: #f44336;
-}
-
-.Java {
-    width: 90%;
-    background-color: #808080;
-}
-*/
-
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
 button {
     background-color: #4CAF50;
     color: white;
@@ -348,14 +333,11 @@ button:hover {
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 8px 0;
     position: relative;
 }
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
+
 
 .form-container {
     padding: 16px;
@@ -378,15 +360,48 @@ span.psw {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+    padding-top: 16px;
 }
 
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 2% auto 2% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+.modal-content input {
+    width: 100%;
+    padding: 16px;
+    text-align: right;
+    margin-bottom: 8px;
+}
+.form-order{
+    margin-top: 32px;
+}
+
+.modal-content textarea {
+    width: 100%;
+    padding: 16px;
+    text-align: right;
+    resize: none;
+    height: 170px;
+}
+
+.btn-send {
+    width: 100%;
+    padding: 16px;
+    font-size: 20px;
+    background-color: #00aefb;
+    color: #fff;
+    border: 2px solid #fff;
+    margin-top: 8px;
+}
+
+.btn-send:hover {
+    background-color: #00affb;
+    color: #ff407a;
+    border: 3px solid #ff407a;
 }
 
 /* The Close Button (x) */
@@ -412,22 +427,184 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
-    
+
 @keyframes animatezoom {
-    from {transform: scale(0)} 
+    from {transform: scale(0)}
     to {transform: scale(1)}
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
-       display: block;
-       float: none;
+        display: block;
+        float: none;
     }
     .cancelbtn {
-       width: 100%;
+        width: 100%;
     }
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoInstagram:hover {
+    background-color: #bc2a8d;
+}
+.social-network a.icoGithub:hover {
+    background-color: #4078c0;
+}
+
+.social-network a.icoTelegram:hover {
+    background-color: #0088cc;
+}
+
+.social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+}
+.social-network a.icoInstagram:hover i,.social-network a.icoGithub:hover i,
+.social-network a.icoGoogle:hover i,  .social-network a.icoLinkedin:hover i
+,  .social-network a.icoTelegram:hover i {
+    color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+    color:#44BCDD;
+}
+
+.social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+}
+.social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.social-circle a {
+    background-color: #1E252B;
+}
+
+
+.card {
+    padding-top: 20px;
+    margin: 10px;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.card.hovercard {
+    position: relative;
+    padding-top: 16px 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card.hovercard .cardheader {
+    background: url("../img/bg5.jpg");
+    background-size: cover;
+    height: 150px;
+}
+
+.card.hovercard .avatar {
+    position: relative;
+    top: -100px;
+    margin-bottom: -120px;
+}
+
+.card.hovercard .avatar img {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 10px solid rgba(255,255,255,0.3);
+}
+
+.card.hovercard .info {
+    padding: 4px 8px 10px;
+}
+
+.title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #1E252B;
+    vertical-align: middle;
+}
+
+.desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1E252B;
+    text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+    padding: 0 20px;
+
+}
+
+.modal-content8 {
+    width: 33%;
+
 }

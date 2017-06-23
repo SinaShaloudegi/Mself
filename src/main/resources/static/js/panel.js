@@ -1,4 +1,4 @@
-function openTab(event, name) {
+function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -10,10 +10,11 @@ function openTab(event, name) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(name).style.display = "block";
-			prompt(document.getElementById(name).getAttribute.style.display);
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
 
-    event.currentTarget.className += " active";
+  //  prompt(document.getElementById(name).getAttribute.style.display);
+
 }
 
 // Get the element with id="defaultOpen" and click on it

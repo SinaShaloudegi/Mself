@@ -1,13 +1,1 @@
-package com.blog;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class MySelfWebsite {
-
-
-    public static void main(String[] args) {
-        SpringApplication.run(MySelfWebsite.class, args);
-    }
-}
+package com.blog;import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;@SpringBootApplicationpublic class MySelfWebsite {    public static void main(String[] args) {        SpringApplication.run(MySelfWebsite.class, args);    }}

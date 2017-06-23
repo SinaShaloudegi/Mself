@@ -14,15 +14,15 @@ import javax.transaction.Transactional;
 
 @Service
 @Transactional
-public class SubmitServiceImpl implements  SubmitService  {
+public class SubmitServiceImpl implements SubmitService {
 
 
     @Autowired
-    private SubmitRepository SR ;
+    private SubmitRepository SR;
 
     @Override
     public Submit FindOne(Integer ID) {
-        return SR.findOne(ID );
+        return SR.findOne(ID);
     }
 
     @Override
@@ -32,17 +32,17 @@ public class SubmitServiceImpl implements  SubmitService  {
 
     @Override
     public Submit Save(Submit C) {
-        return SR.save(C );
+        return SR.save(C);
     }
 
     @Override
     public void Delete(Submit C) {
-        SR.delete( C );
+        SR.delete(C);
     }
 
     @Override
     public void Delete(Integer ID) {
-        SR.delete( ID );
+        SR.delete(ID);
     }
 
     @Override
