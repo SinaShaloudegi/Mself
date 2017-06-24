@@ -12,7 +12,7 @@ import javax.transaction.Transactional;
  */
 @Service
 @Transactional
-public class WorkServiceImpl implements WorkService{
+public class WorkServiceImpl implements WorkService {
     @Autowired
     private WorkRepository WR;
 
@@ -33,7 +33,7 @@ public class WorkServiceImpl implements WorkService{
 
     @Override
     public void Delete(Work C) {
-WR.delete(C);
+        WR.delete(C);
     }
 
     @Override

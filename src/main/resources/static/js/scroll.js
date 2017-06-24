@@ -10,16 +10,16 @@ jQuery(document).ready(function ($) {
         if ($(this).scrollTop() > 700) {
             $('#mainNav').css("background-color", "#1E252B");
             $('.header-text').css("display", "none");
-            $('.bar-item-img').css("margin-left","32.2%");
-            $('.bar-item-img').css("max-height","60px");
-            $('.bar-item-img').css("max-width","60px");
+            $('.bar-item-img').css("margin-left", "32.2%");
+            $('.bar-item-img').css("max-height", "60px");
+            $('.bar-item-img').css("max-width", "60px");
 
         } else {
             $('#mainNav').css("background-color", "transparent");
             $('.header-text').css("display", "inline");
-            $('.bar-item-img').css("margin-left","25%");
-            $('.bar-item-img').css("max-height","150px");
-            $('.bar-item-img').css("max-width","150px");
+            $('.bar-item-img').css("margin-left", "25%");
+            $('.bar-item-img').css("max-height", "150px");
+            $('.bar-item-img').css("max-width", "150px");
 
         }
     });
@@ -35,7 +35,6 @@ jQuery(document).ready(function ($) {
     });
 
 
-
     $(window).scroll(function () {
         if ($(this).scrollTop() > 500) {
             $('.header-text').css("visibility", "hidden");
@@ -46,8 +45,8 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $(window).bind('scroll', function() {
-        if(($(window).scrollTop() >= $('#about').offset().top - 50)& ($(window).scrollTop() <= $('#team').offset().top - 50)){
+    $(window).bind('scroll', function () {
+        if (($(window).scrollTop() >= $('#about').offset().top - 50) & ($(window).scrollTop() <= $('#team').offset().top - 50)) {
             $('.1').css("background-color", "#00aefb");
             $('.1').css("border-radius", "10%");
 
@@ -59,8 +58,8 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $(window).bind('scroll', function() {
-        if(($(window).scrollTop() >= $('#team').offset().top - 50)& ($(window).scrollTop() <= $('#work').offset().top - 50)){
+    $(window).bind('scroll', function () {
+        if (($(window).scrollTop() >= $('#team').offset().top - 50) & ($(window).scrollTop() <= $('#work').offset().top - 50)) {
             $('.2').css("background-color", "#00aefb");
             $('.2').css("border-radius", "10%");
 
@@ -69,8 +68,8 @@ jQuery(document).ready(function ($) {
 
         }
     });
-    $(window).bind('scroll', function() {
-        if(($(window).scrollTop() >= $('#work').offset().top - 50)& ($(window).scrollTop() <= $('#contact').offset().top - 50)){
+    $(window).bind('scroll', function () {
+        if (($(window).scrollTop() >= $('#work').offset().top - 50) & ($(window).scrollTop() <= $('#contact').offset().top - 50)) {
             $('.3').css("background-color", "#00aefb");
             $('.3').css("border-radius", "10%");
 
@@ -80,8 +79,8 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $(window).bind('scroll', function() {
-        if($(window).scrollTop() >= $('#contact').offset().top - 50) {
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('#contact').offset().top - 50) {
             $('.4').css("background-color", "#00aefb");
             $('.4').css("border-radius", "10%");
 
@@ -148,4 +147,4 @@ window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};

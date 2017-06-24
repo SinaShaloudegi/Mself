@@ -8,12 +8,16 @@ import com.blog.Domain.Order;
 public interface OrderService {
 
 
+    Order FindOne(Integer ID);
 
-    public Order FindOne(Integer ID) ;
-    public Iterable<Order> FindAll() ;
-    public Order Save(Order C) ;
-    public void Delete(Order C) ;
-    public void Delete(Integer ID) ;
-    public Order Update(Order C) ;
+    Iterable<Order> FindAll();
+
+    Order Save(Order C);
+
+    void Delete(Order C);
+
+    void Delete(Integer ID);
+
+    Order Update(Order C);
 
 }

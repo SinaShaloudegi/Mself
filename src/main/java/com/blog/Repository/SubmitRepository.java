@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
  * Created by sina on 6/6/2017.
  */
 @Repository
-public interface SubmitRepository extends CrudRepository<Submit, Integer>
-{
+public interface SubmitRepository extends CrudRepository<Submit, Integer> {
 
 }

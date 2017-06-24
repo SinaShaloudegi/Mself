@@ -36,7 +36,7 @@
     <div class="header-text">
         <h1>Myself</h1>
         <p>ارائه ی خدمات مختلف نرم افزاری</p>
-        <button onclick="location.href='#about'"><b>درباره‌ ما</b></button>
+        <button onclick="location.href='#about'"><b>درباره‌ما</b></button>
     </div>
 
 </header>

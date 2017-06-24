@@ -119,11 +119,10 @@ public class MainController {
 
 
     @RequestMapping(value = "/getOrder", method = RequestMethod.POST)
-
     String order(@RequestParam("order-name") String name,
-                            @RequestParam("order-email") String email,
-                            @RequestParam("order-phone") String phone,
-                            @RequestParam("order-message") String message)
+                 @RequestParam("order-email") String email,
+                 @RequestParam("order-phone") String phone,
+                 @RequestParam("order-message") String message)
 
     {
 
@@ -183,8 +182,6 @@ public class MainController {
         }
 
     }
-
-
 
 
 }

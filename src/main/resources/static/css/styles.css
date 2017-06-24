@@ -53,8 +53,6 @@ header {
     position: fixed;
 }
 
-
-
 .header-text h1 {
     font-size: 65px;
     animation: type 4s steps(60, end);
@@ -65,7 +63,7 @@ header {
     width: 15%;
     padding: 8px 100px 8px 20px;
     color: white;
-    background-color:rgba(0,174,251,0.4);
+    background-color: rgba(0, 174, 251, 0.4);
     border-radius: 5%;
     border: 2px solid #fff;
     font-size: 25px;
@@ -87,7 +85,7 @@ h2 {
 
 footer {
     padding: 16px;
-    background-color:#fff;
+    background-color: #fff;
 }
 
 section {
@@ -96,7 +94,7 @@ section {
 }
 
 .p-about {
-    padding:16px 32px;
+    padding: 16px 32px;
 }
 
 p {
@@ -104,6 +102,7 @@ p {
     padding-left: 32px;
     padding-right: 32px;
 }
+
 .contact-form input {
     width: 90%;
     padding: 16px;
@@ -129,14 +128,15 @@ p {
     border: 2px solid #fff;
 }
 
-.contact-form input:hover,.contact-formm textarea:hover{
+.contact-form input:hover, .contact-formm textarea:hover {
     background-color: #00affb;
 }
+
 .btn-sub {
     width: 20%;
     padding: 16px;
     font-size: 20px;
-    background-color:rgba(0,174,251,0.4);
+    background-color: rgba(0, 174, 251, 0.4);
     color: #fff;
     border: 2px solid #fff;
 }
@@ -161,13 +161,13 @@ p {
     display: table;
 }
 
-
-.container{
+.container {
     position: relative;
     float: left;
     width: 33%;
 
 }
+
 .middle {
     transition: .5s ease;
     opacity: 0;
@@ -185,6 +185,7 @@ p {
 .container:hover .middle {
     opacity: 1;
 }
+
 .order {
     background-color: #00aefb;
     color: white;
@@ -192,12 +193,11 @@ p {
     padding: 16px 32px;
 }
 
-
-
 #about, #work {
     background-color: #f6f5f2;
 }
-#team{
+
+#team {
     background-image: url("../img/bg3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -206,8 +206,7 @@ p {
     width: 100%;
 }
 
-
-#contact{
+#contact {
     background-color: #1E252B;
 
     background-image: url("../img/map-image.png");
@@ -244,7 +243,7 @@ p {
 .team-img {
     border-radius: 50%;
     width: 50%;
-    margin:0px 16px;
+    margin: 0px 16px;
     border: 7px solid white;
 }
 
@@ -274,7 +273,7 @@ p {
     text-align: center;
     white-space: normal;
     color: #fff;
-    background-color:transparent;
+    background-color: transparent;
 
 }
 
@@ -287,7 +286,7 @@ p {
     border: none;
     outline: none;
     display: block;
-    max-height:150px;
+    max-height: 150px;
     max-width: 150px;
 
 }
@@ -296,18 +295,14 @@ p {
     color: #00aefb;
 }
 
-
 .fa-android {
     background: #a4c639;
     color: white;
 }
 
-
-
 * {
     box-sizing: border-box
 }
-
 
 button {
     background-color: #4CAF50;
@@ -337,8 +332,6 @@ button:hover {
     position: relative;
 }
 
-
-
 .form-container {
     padding: 16px;
 }
@@ -358,8 +351,8 @@ span.psw {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
     padding-top: 16px;
 }
 
@@ -370,13 +363,15 @@ span.psw {
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
 }
+
 .modal-content input {
     width: 100%;
     padding: 16px;
     text-align: right;
     margin-bottom: 8px;
 }
-.form-order{
+
+.form-order {
     margin-top: 32px;
 }
 
@@ -427,13 +422,21 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -442,6 +445,7 @@ span.psw {
         display: block;
         float: none;
     }
+
     .cancelbtn {
         width: 100%;
     }
@@ -450,19 +454,20 @@ span.psw {
 ul.social-network {
     list-style: none;
     display: inline;
-    margin-left:0 !important;
+    margin-left: 0 !important;
     padding: 0;
 }
+
 ul.social-network li {
     display: inline;
     margin: 0 5px;
 }
 
-
 /* footer social icons */
 .social-network a.icoInstagram:hover {
     background-color: #bc2a8d;
 }
+
 .social-network a.icoGithub:hover {
     background-color: #4078c0;
 }
@@ -472,36 +477,38 @@ ul.social-network li {
 }
 
 .social-network a.icoGoogle:hover {
-    background-color:#BD3518;
+    background-color: #BD3518;
 }
 
 .social-network a.icoLinkedin:hover {
-    background-color:#007bb7;
+    background-color: #007bb7;
 }
-.social-network a.icoInstagram:hover i,.social-network a.icoGithub:hover i,
-.social-network a.icoGoogle:hover i,  .social-network a.icoLinkedin:hover i
-,  .social-network a.icoTelegram:hover i {
-    color:#fff;
+
+.social-network a.icoInstagram:hover i, .social-network a.icoGithub:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icoTelegram:hover i {
+    color: #fff;
 }
+
 a.socialIcon:hover, .socialHoverClass {
-    color:#44BCDD;
+    color: #44BCDD;
 }
 
 .social-circle li a {
-    display:inline-block;
-    position:relative;
-    margin:0 auto 0 auto;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    border-radius:50%;
-    text-align:center;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
     width: 50px;
     height: 50px;
-    font-size:20px;
+    font-size: 20px;
 }
+
 .social-circle li i {
-    margin:0;
-    line-height:50px;
+    margin: 0;
+    line-height: 50px;
     text-align: center;
 }
 
@@ -516,6 +523,7 @@ a.socialIcon:hover, .socialHoverClass {
     -ms-transition: all 0.2s;
     transition: all 0.2s;
 }
+
 .social-circle i {
     color: #fff;
     -webkit-transition: all 0.8s;
@@ -528,7 +536,6 @@ a.socialIcon:hover, .socialHoverClass {
 .social-circle a {
     background-color: #1E252B;
 }
-
 
 .card {
     padding-top: 20px;
@@ -545,11 +552,6 @@ a.socialIcon:hover, .socialHoverClass {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
-
-
-
 
 .card.hovercard {
     position: relative;
@@ -576,7 +578,7 @@ a.socialIcon:hover, .socialHoverClass {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border: 10px solid rgba(255,255,255,0.3);
+    border: 10px solid rgba(255, 255, 255, 0.3);
 }
 
 .card.hovercard .info {

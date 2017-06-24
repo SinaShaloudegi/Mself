@@ -7,11 +7,16 @@ import com.blog.Domain.User;
  */
 public interface UserService {
 
-    public User FindOne(Integer ID) ;
-    public Iterable<User> FindAll() ;
-    public User Save(User C) ;
-    public void Delete(User C) ;
-    public void Delete(Integer ID) ;
-    public User Update(User C) ;
+    User FindOne(Integer ID);
+
+    Iterable<User> FindAll();
+
+    User Save(User C);
+
+    void Delete(User C);
+
+    void Delete(Integer ID);
+
+    User Update(User C);
 
 }

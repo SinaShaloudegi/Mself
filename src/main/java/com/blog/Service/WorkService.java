@@ -1,6 +1,5 @@
 package com.blog.Service;
 
-import com.blog.Domain.Submit;
 import com.blog.Domain.Work;
 
 /**
@@ -9,11 +8,16 @@ import com.blog.Domain.Work;
 public interface WorkService {
 
 
-    public Work FindOne(Integer ID) ;
-    public Iterable<Work> FindAll() ;
-    public Work Save(Work C) ;
-    public void Delete(Work C) ;
-    public void Delete(Integer ID) ;
-    public Work Update(Work C) ;
+    Work FindOne(Integer ID);
+
+    Iterable<Work> FindAll();
+
+    Work Save(Work C);
+
+    void Delete(Work C);
+
+    void Delete(Integer ID);
+
+    Work Update(Work C);
 
 }

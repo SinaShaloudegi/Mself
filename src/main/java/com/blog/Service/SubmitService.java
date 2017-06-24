@@ -8,14 +8,17 @@ import com.blog.Domain.Submit;
 public interface SubmitService {
 
 
+    Submit FindOne(Integer ID);
 
+    Iterable<Submit> FindAll();
 
-    public Submit FindOne(Integer ID) ;
-    public Iterable<Submit> FindAll() ;
-    public Submit Save(Submit C) ;
-    public void Delete(Submit C) ;
-    public void Delete(Integer ID) ;
-    public Submit Update(Submit C) ;
+    Submit Save(Submit C);
+
+    void Delete(Submit C);
+
+    void Delete(Integer ID);
+
+    Submit Update(Submit C);
 
 
 }
